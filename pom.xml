@@ -2,13 +2,44 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>me.aifaq</groupId>
     <artifactId>mybatis-generator-ext</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <name>${project.artifactId}</name>
+    <version>0.1</version>
     <packaging>jar</packaging>
-    <name>mybatis-generator-ext v${project.version}</name>
     <properties>
 		<java.version>1.7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <url>https://github.com/5waynewang/mybatis-generator-ext</url>
+
+    <licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:https://github.com/5waynewang/mybatis-generator-ext.git</connection>
+        <developerConnection>scm:git:git@github.com:5waynewang/mybatis-generator-ext.git</developerConnection>
+        <url>https://github.com/5waynewang/mybatis-generator-ext</url>
+    </scm>
+
+    <mailingLists>
+        <mailingList>
+            <name>5waynewang</name>
+            <post>5waynewang@gmail.com</post>
+        </mailingList>
+    </mailingLists>
+
+    <developers>
+        <developer>
+            <name>5waynewang</name>
+            <email>5waynewang@gmail.com</email>
+            <timezone>8</timezone>
+        </developer>
+    </developers>
 	
     <repositories>
 		<repository>
@@ -107,4 +138,15 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype-nexus-releases</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
+    </distributionManagement>
 </project>
