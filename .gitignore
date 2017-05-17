@@ -1,0 +1,8 @@
+target
+*.log
+.settings
+.classpath
+.project
+.idea
+*.iml
+src/test/**/me/aifaq/dao/**/generator
