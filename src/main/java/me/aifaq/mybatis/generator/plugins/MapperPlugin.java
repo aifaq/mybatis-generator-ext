@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 在生成的Mapper类中添加注解 @Mapper
  *
- * @author Wayne.Wang<5waynewang@gmail.com>
+ * @author Wang Wei
  * @since 20:43 2017/5/15
  */
 public class MapperPlugin extends PluginAdapter {

@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 强制跳过merge sql map.xml
  *
- * @author Wayne.Wang<5waynewang@gmail.com>
+ * @author Wang Wei
  * @since 14:52 2017/5/17
  */
 public class ForceSkipMergeSqlMapPlugin extends PluginAdapter {

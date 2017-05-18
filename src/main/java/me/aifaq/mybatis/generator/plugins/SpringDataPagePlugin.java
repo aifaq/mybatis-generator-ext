@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 给selectByExample方法添加分页功能
  *
- * @author Wayne.Wang<5waynewang@gmail.com>
+ * @author Wang Wei
  * @since 20:43 2017/5/15
  */
 public class SpringDataPagePlugin extends PluginAdapter {
@@ -72,11 +72,11 @@ public class SpringDataPagePlugin extends PluginAdapter {
 		sb.append(
 				"        <foreach collection=\"page.sort\" item=\"order\" index=\"index\" open=\"\" separator=\",\" close=\"\">\n");
 		sb.append(
-				"          ${order.property,jdbcType=VARCHAR} ${order.direction,jdbcType=VARCHAR}\n");
+				"          ${order.property} ${order.direction}\n");
 		sb.append("        </foreach>\n");
 		sb.append("      </if>\n");
 		sb.append(
-				"      LIMIT #{page.offset,jdbcType=INTEGER},#{page.pageSize,jdbcType=INTEGER}\n");
+				"      LIMIT #{page.offset},#{page.pageSize}\n");
 		sb.append("    </if>");
 		PAGE = sb.toString();
 	}
