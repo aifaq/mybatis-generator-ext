@@ -3,12 +3,12 @@
     <groupId>me.aifaq</groupId>
     <artifactId>mybatis-generator-ext</artifactId>
     <name>${project.artifactId}</name>
-    <version>0.1</version>
+    <version>0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <description>extension for mybatis-generator</description>
 
-    <url>https://github.com/5waynewang/mybatis-generator-ext</url>
+    <url>https://github.com/aifaq/mybatis-generator-ext</url>
 
     <licenses>
         <license>
@@ -19,9 +19,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:https://github.com/5waynewang/mybatis-generator-ext.git</connection>
-        <developerConnection>scm:git:git@github.com:5waynewang/mybatis-generator-ext.git</developerConnection>
-        <url>https://github.com/5waynewang/mybatis-generator-ext</url>
+        <connection>scm:git:https://github.com/aifaq/mybatis-generator-ext.git</connection>
+        <developerConnection>scm:git:git@github.com:aifaq/mybatis-generator-ext.git</developerConnection>
+        <url>https://github.com/aifaq/mybatis-generator-ext</url>
     </scm>
 
     <mailingLists>
