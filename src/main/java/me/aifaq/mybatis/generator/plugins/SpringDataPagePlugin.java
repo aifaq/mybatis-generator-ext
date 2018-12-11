@@ -67,7 +67,7 @@ public class SpringDataPagePlugin extends PluginAdapter {
 	static {
 		final StringBuilder sb = new StringBuilder();
 		sb.append("    <if test=\"page != null\">\n");
-		sb.append("      <if test=\"page.sort != null\">\n");
+		sb.append("      <if test=\"page.sort != null and page.sort.isSorted\">\n");
 		sb.append("        ORDER BY\n");
 		sb.append(
 				"        <foreach collection=\"page.sort\" item=\"order\" index=\"index\" open=\"\" separator=\",\" close=\"\">\n");
