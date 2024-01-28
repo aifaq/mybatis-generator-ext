@@ -4,7 +4,6 @@ import org.mybatis.generator.api.IntrospectedTable;
 import org.mybatis.generator.api.PluginAdapter;
 import org.mybatis.generator.api.dom.java.FullyQualifiedJavaType;
 import org.mybatis.generator.api.dom.java.Interface;
-import org.mybatis.generator.api.dom.java.TopLevelClass;
 
 import java.util.List;
 
@@ -15,27 +14,26 @@ import java.util.List;
  * @since 20:43 2017/5/15
  */
 public class MapperPlugin extends PluginAdapter {
-	private FullyQualifiedJavaType mapper;
+    private FullyQualifiedJavaType mapper;
 
-	public MapperPlugin() {
-		super();
-		mapper = new FullyQualifiedJavaType("org.apache.ibatis.annotations.Mapper"); //$NON-NLS-1$
-	}
+    public MapperPlugin() {
+        super();
+        mapper = new FullyQualifiedJavaType("org.apache.ibatis.annotations.Mapper"); //$NON-NLS-1$
+    }
 
-	@Override
-	public boolean validate(List<String> warnings) {
-		// this plugin is always valid
-		return true;
-	}
+    @Override
+    public boolean validate(List<String> warnings) {
+        // this plugin is always valid
+        return true;
+    }
 
-	@Override
-	public boolean clientGenerated(Interface interfaze, TopLevelClass topLevelClass,
-			IntrospectedTable introspectedTable) {
+    @Override
+    public boolean clientGenerated(Interface interfaze, IntrospectedTable introspectedTable) {
 
-		interfaze.addImportedType(mapper);
+        interfaze.addImportedType(mapper);
 
-		interfaze.addAnnotation("@Mapper");
+        interfaze.addAnnotation("@Mapper");
 
-		return true;
-	}
+        return true;
+    }
 }
